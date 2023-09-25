@@ -1,0 +1,31 @@
+#include <iostream>
+#include <cmath>
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	int t;
+	cin>>t;
+	while(t--)
+	{
+		int n,b,count=0;
+		cin>>n>>b;
+		int w[n],h[n],p[n],a[n];
+		for(int i=0;i<n;i++)
+		{
+			cin>>w[i]>>h[i]>>p[i];	
+			if(p[i]<=b)
+			{
+				a[i]=w[i]*h[i];
+			}
+			else
+			count++;
+		}
+		sort(a,a+n);
+		if(count==n)
+		cout<<"no tablet"<<endl;
+		else
+		cout<<a[n-1]<<endl;
+	}
+	return 0;
+}
