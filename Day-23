@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--)
+	{
+	    int a,n,i;
+	    cin>>a;
+	 cin>>i;
+	    cin>>n;
+	    if(a+i>i+n){
+	        cout<<a+i<<endl;
+	        else if (a+i<i+n){
+	        cout<<i+n<<endl;}
+	        else if (a+n>n+i){
+	        cout<<a+n<<endl;}
+	         else if (a+n<n+i){
+	        cout<<i+n<<endl;}
+	         else if (a+n>a+i){
+	        cout<<a+n<<endl;}
+	        else{
+	        cout<<a+i<<endl;}
+	    }
+	}
+	return 0;
+}
