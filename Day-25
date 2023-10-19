@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--)
+	{
+	    int a,n[100],i,j;
+	    int count=0;
+	    cin>>a;
+	    cin>>j;
+	    for(i=0;i<a;i++){
+	    cin>>n[i];}
+	    for(i=0;i<a;i++){
+	    if(n[i]>=j)
+	   count++;
+	}
+	cout<<count<<endl;}
+	return 0;
+}
