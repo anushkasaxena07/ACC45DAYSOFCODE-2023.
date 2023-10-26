@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+
+int main() { int a,b,c;
+	// your code goes here
+	cin>>a>>b>>c;
+	int j=2*(180+a);
+	cout<<j<<endl;
+	cout<<b+c<<endl;;
+	cout<<j-(b+c);
+	return 0;
+}
