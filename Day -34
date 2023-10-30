@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int t;
+	scanf("%d",&t);
+	while(t--){
+	    int x,y;
+	    
+	    scanf("%d%d",&x,&y);
+	    float s,m;
+	    m= 0.1*x;
+	    s=x-m;
+	    if(y<s){
+	        cout<<"DINING"<<endl;
+	    }
+	    else if (y>s){
+	        cout<<"ONLINE"<<endl;
+	    }
+	    else
+	    {
+	        cout<<"EITHER"<<endl;
+	    }
+	}
+	return 0;
+}
