@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int  t ;cin >> t;
+    while (t--){
+	    int nb,ep,ds;
+	    cin>>nb>>ep>>ds ;
+	    cout << nb/(ep*5)+ds << endl;
+	    }
+	return 0;
+}
